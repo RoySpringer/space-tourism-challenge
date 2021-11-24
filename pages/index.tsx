@@ -7,6 +7,7 @@ import Text from "../components/Text";
 import HoverButton from "../components/HoverButton";
 import NavBar, { NavBarItem } from "../components/NavBar";
 import data from "../shared/jsons/data.json";
+import { useRouter } from "next/dist/client/router";
 
 const navItemsString: string[] = Object.keys(data);
 const navItems: NavBarItem[] = [];
@@ -16,6 +17,7 @@ for (const item of navItemsString) {
 }
 
 const Home: NextPage = () => {
+  const router = useRouter();
   return (
     <div className={styles.container}>
       <Head>
@@ -47,7 +49,12 @@ const Home: NextPage = () => {
           </Text>
         </div>
         <div className={`${styles.grid}`}>
-          <HoverButton text="EXPLORER" />
+          <HoverButton
+            text="EXPLORER"
+            onClick={() => {
+              router.push("/destinations");
+            }}
+          />
         </div>
       </main>
     </div>
