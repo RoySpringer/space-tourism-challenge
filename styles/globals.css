@@ -1,9 +1,14 @@
+:root {
+  --light-blue: #d0d6f9;
+  --white: #ffffff;
+  --dark: #0b0d17;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 a {
@@ -13,4 +18,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Normalize the texts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  margin: 0;
 }

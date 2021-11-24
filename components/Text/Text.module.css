@@ -1,0 +1,55 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.subHeading1 {
+  font-family: "Bellefair", serif;
+  color: var(--white);
+}
+
+.h5,
+.subHeading2,
+.nav {
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--white);
+}
+
+.h1 {
+  font-size: 150px;
+  line-height: 172px;
+}
+
+.h2 {
+  font-size: 100px;
+}
+
+.h3 {
+  font-size: 56px;
+}
+
+.h4 {
+  font-size: 32px;
+}
+
+.h5 {
+  line-height: 34px;
+  letter-spacing: 4.75px;
+  color: var(--light-blue);
+}
+
+.h5,
+.subHeading1 {
+  font-size: 28px;
+}
+
+.nav,
+.subHeading2 {
+  font-size: 16px;
+}
+
+.body {
+  font-size: 18px;
+  color: var(--light-blue);
+  font-family: "Barlow", sans-serif;
+  line-height: 32px;
+}
