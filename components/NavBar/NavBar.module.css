@@ -1,0 +1,41 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(30px);
+  padding-right: 15vw;
+}
+
+.navBarUl {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 60px;
+  height: 100%;
+}
+
+.navBarLi {
+  height: 100%;
+}
+
+.navBarA {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+  height: 100%;
+  color: var(--white);
+}
+
+.navBarA.active::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: var(--white);
+  width: 90%;
+}
+
+.navBarNumber {
+  font-weight: bold;
+  margin-right: 2ch;
+}
