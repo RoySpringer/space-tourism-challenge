@@ -4,7 +4,6 @@
   align-items: center;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(30px);
-  padding-right: 15vw;
 }
 
 .navBarUl {
@@ -12,24 +11,16 @@
   align-items: center;
   list-style: none;
   margin: 0;
-  padding-left: 60px;
+  padding-left: 8vw;
   height: 100%;
 }
 
 .navBarA {
   display: flex;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 2rem 2vw;
   height: 100%;
   color: var(--white);
-}
-
-.navBarA.active::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  background-color: var(--white);
-  width: 90%;
 }
 
 .navBarNumber {

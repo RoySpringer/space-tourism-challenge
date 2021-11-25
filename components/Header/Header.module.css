@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 25% 5% 55%;
+  grid-auto-rows: auto;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.logo {
+  place-self: center;
+  grid-row: 1;
+}
+
+.navBar {
+  grid-row: 1;
+  grid-column: 3 / 5;
+}
+
+.hr {
+  grid-row: 1;
+  left: 12rem;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 2;
+  border: 0;
+  grid-column: 2 / 4;
+}

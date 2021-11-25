@@ -12,11 +12,11 @@ export interface NavBarItem {
 
 export interface NavBarProps {
   navItems: NavBarItem[];
-  activeIndex?: number;
+  className?: string;
 }
 
 const NavBar = (props: NavBarProps) => {
-  const { navItems, activeIndex = 0 } = props;
+  const { navItems, className } = props;
   const router = useRouter();
   const navBar = useRef<HTMLElement>(null);
   const indicator = useRef<HTMLDivElement>(null);
@@ -68,7 +68,7 @@ const NavBar = (props: NavBarProps) => {
   }, []);
 
   return (
-    <nav ref={navBar} className={styles.navBar}>
+    <nav ref={navBar} className={`${styles.navBar} ${className}`}>
       <ul className={styles.navBarUl}>
         {navItems.map((item, index) => (
           <li key={index} className={styles.navBarLi} onClick={item.onClick}>
